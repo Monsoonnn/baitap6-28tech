@@ -16,6 +16,7 @@
     }
     .section-1{
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 10px;
     }
     .section-1 .content{
@@ -25,6 +26,7 @@
         padding-bottom: 60vh;
         text-align: center;
         background-color: #CAEFF2;
+        
     }
     .section-1 .aside{
         width: 30%;
@@ -36,8 +38,8 @@
     }
     .section-2{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 10px;
     }
     .section-2 .box{
         width: calc(100%/4 - 40px/4);
@@ -45,12 +47,29 @@
         text-align: center;
         padding-top: 5vh;
         padding-bottom: 15vh;
+        margin-bottom: 10px;
     }
     .footer{
         background-color: #EECBF3;
         text-align: center;
         padding-top: 2.5vh;
         padding-bottom: 2.5vh;
+    }
+    @media (max-width: 767.98px){
+        .section-1 .content{
+        width: 100%;
+        }
+        .section-1 .aside{
+        width: 100%;
+        }
+        .section-2 .box{
+        width: calc(100%/2 - 40px/4);
+        }
+    }
+    @media (max-width: 480px){
+        .section-2 .box{
+        width: 100%;
+        }
     }
 </style>
 <body>
